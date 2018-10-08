@@ -6,6 +6,9 @@
 
 body {
   margin: 0;
+
+  background-color: lightsalmon;
+  font-family: Georgia, SansSerif;
 }
 
 .main-content {
@@ -13,4 +16,11 @@ body {
   max-width: 800px;
   margin: 0 auto;
   padding: 0 24px;
+}
+
+.image-panel {
+  background-color: darkseagreen;
+  padding: 45px;
+  border: 5px solid black;
+  border-radius: 40px;
 }

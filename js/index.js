@@ -25,3 +25,6 @@ function loadRandomImage() {
 $(function () {
     loadRandomImage();
 });
+
+
+
