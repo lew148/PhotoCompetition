@@ -40,6 +40,15 @@ function loadRandomImage() {
 
 
 
+
+
+function refreshPage() {
+    location.reload();
+}
+
+
+
+
 /*
 This up-votes the image and reloads the page
 */

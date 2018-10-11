@@ -1,25 +1,36 @@
 // Partial for the Nav Bar
 
 .navbar {
-  background-color: darkseagreen;
-  border: 5px solid black;
-  border-radius: 15px;
+  color: black;
+
 
   .navbar-list {
-    align-items: center;
     list-style: none;
 
 
-    .navbar-item{
 
+    .navbar-item{
+      padding-top: 10px;
+      padding-bottom: 10px;
+      text-align: center;
+      background-color: whitesmoke;
+      border: 5px solid black;
+      border-radius: 15px;
 
 
       a {
+        padding: 10px;
         text-decoration: none;
+
       }
+
+
     }
 
+
+    .navbar-item:hover {
+      background-color: darkseagreen;
   }
 
-
+  }
 }

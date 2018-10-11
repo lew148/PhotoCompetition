@@ -8,16 +8,28 @@
     width: 100%;
   }
 
-  .voting-buttons {
+  .buttons {
     float: right;
-    display: flex;
-    justify-content: center;
     padding-right: 95px;
     padding-top: 50px;
 
-    .voting-button {
-      padding: 8px;
-      margin: 0 8px;
+
+    .buttons-panel {
+      padding-left: 5px;
+      padding-bottom: 5px;
+
+      text-align: center;
+
+      background-color: darkseagreen;
+
+      border: 5px solid black;
+      border-radius: 15px;
+
+
+      .voting-button {
+        padding: 8px;
+        margin: 0 8px;
+      }
     }
   }
 
@@ -50,7 +62,7 @@
 
   button:active {
     top: 0px;
-    background: lightsalmon;
+    background: darkgray;
   }
 
 }
