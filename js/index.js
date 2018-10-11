@@ -39,7 +39,15 @@ function loadRandomImage() {
 }
 
 
+function toggleDetails() {
+    var x = document.getElementById("details-panel");
 
+    if (x.style.display === "none") {
+        x.style.display = "block";
+    } else {
+        x.style.display = "none";
+    }
+}
 
 
 function refreshPage() {

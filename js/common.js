@@ -7,3 +7,5 @@ var token = '892e1fac-76f9-47d9-8083-3fe7aaa3ae00';
 function buildUrl(path) {
     return 'http://' + backendIp + '/images' + path + '?token=' + token;
 }
+
+
