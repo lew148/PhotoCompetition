@@ -21,20 +21,33 @@
     <script src="../js/index.js"></script>
 </head>
 
-<body>
+<body class="index-body">
+
+
+<div class="page-title">
+    <h1 class="title">Photo Competition</h1>
+</div>
+
+<div class ="wrapper">
 
 <!-- Navigation bar -->
-<nav class="navbar main-content">
-    <ul class="navbar-list">
-        <li class="navbar-item"><a class="navbar-title" href="index.html">Photo Competition</a></li>
-        <li class="navbar-item"><a class="navbar-link" href="top-rated.html">Top Rated</a></li>
-        <li class="navbar-item"><a class="navbar-link" href="about.html">About</a></li>
-    </ul>
-</nav>
+    <nav class="navbar main-content">
+        <ul class="navbar-list">
+            <li class="navbar-item"><a class="navbar-title" href="index.html">Photo Competition</a></li>
+            <li class="navbar-item"><a class="navbar-link" href="top-rated.html">Top Rated</a></li>
+            <li class="navbar-item"><a class="navbar-link" href="about.html">About</a></li>
+        </ul>
+    </nav>
+</div>
+
+<div class="voting-buttons">
+    <button class="voting-button vote-up" onclick="upVote()">👍</button>
+    <button class="voting-button vote-down" onclick="downVote()">👎</button>
+</div>
 
 <!-- Page content -->
 <div class="main-content">
-    <h1 class="page-title">Photo Competition</h1>
+
 
     <div class="image-panel">
     <div class="image-container">
@@ -42,10 +55,6 @@
         <img id="main-image" src="" alt="">
     </div>
 
-    <div class="voting-buttons">
-        <button class="voting-button vote-up" onclick="upVote()">👍</button>
-        <button class="voting-button vote-down" onclick="downVote()">👎</button>
-    </div>
 
     <table class="image-details">
         <tbody>

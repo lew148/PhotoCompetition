@@ -5,23 +5,45 @@
 
 // Global styling
 
+
+
+.page-title{
+  float: left;
+  padding-left: 20px;
+  padding-right: 20px;
+
+  position: absolute;
+
+  .title{
+    allign: centre;
+    font-size: 30px;
+  }
+}
+
+.wrapper{
+  float: left;
+  padding-top: 75px;
+  padding-left: 5px;
+}
+
+
+
 body {
-  margin: 0;
 
   background-color: lightsalmon;
   font-family: Georgia, SansSerif;
 }
 
 .main-content {
-  width: 100%;
+
   max-width: 800px;
   margin: 0 auto;
-  padding: 0 24px;
+
 }
 
 .image-panel {
   background-color: darkseagreen;
-  padding: 45px;
+  padding: 20px;
   border: 5px solid black;
   border-radius: 40px;
 }
