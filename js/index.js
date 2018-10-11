@@ -1,6 +1,8 @@
 'use strict';
 // JavaScript for use with the index page.
 
+var photoID;
+
 function loadRandomImage() {
     fetch(buildUrl('/random'))
         .then(function (response) {
@@ -16,12 +18,51 @@ function loadRandomImage() {
             var mainImage = $('#main-image');
             mainImage.attr('src', json.url);
             mainImage.attr('alt', 'Photo Competition image, ' + json.name);
+
+            var mainAuthor = $('#main-author');
+            mainAuthor.html(json.author);
+
+            var mainName = $('#main-name');
+            mainName.html(json.name);
+
+            var mainLicense = $('#main-license');
+            mainLicense.html(json.license);
+
+            var mainScore = $('#main-score');
+            mainScore.html(json.score);
+
+            photoID = json.id;
         })
         .catch(function (err) {
             console.error('Request to /random failed: ', err);
         });
 }
 
+
+
+/*
+This up-votes the image and reloads the page
+*/
+function upVote() {
+    $.post(buildUrl('/id/' + photoID + '/vote/up'), function (data) {
+        $(".result").html(data);
+    });
+    location.reload();
+}
+
+/*
+This down-votes the image and reloads the page
+*/
+function downVote() {
+    $.post(buildUrl('/id/' + photoID + '/vote/down'), function (data) {
+        $(".result").html(data);
+    });
+    location.reload();
+}
+
+
+
+// runs functions as the page loads
 $(function () {
     loadRandomImage();
 });

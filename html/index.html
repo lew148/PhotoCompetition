@@ -27,6 +27,7 @@
 <nav class="navbar main-content">
     <ul class="navbar-list">
         <li class="navbar-item"><a class="navbar-title" href="index.html">Photo Competition</a></li>
+        <li class="navbar-item"><a class="navbar-link" href="top-rated.html">Top Rated</a></li>
         <li class="navbar-item"><a class="navbar-link" href="about.html">About</a></li>
     </ul>
 </nav>
@@ -38,31 +39,36 @@
     <div class="image-panel">
     <div class="image-container">
         <!-- src and alt attribute will be populated by index.js on page load -->
-        <img id="main-image" src="">
+        <img id="main-image" src="" alt="">
     </div>
 
     <div class="voting-buttons">
-        <button class="voting-button vote-up">👍</button>
-        <button class="voting-button vote-down">👎</button>
+        <button class="voting-button vote-up" onclick="upVote()">👍</button>
+        <button class="voting-button vote-down" onclick="downVote()">👎</button>
     </div>
 
     <table class="image-details">
         <tbody>
             <tr>
                 <td><b>Author</b></td>
-                <td>TODO: Fill in author details.</td>
+                <td id="main-author"></td>
             </tr>
             <tr>
                 <td><b>Name</b></td>
-                <td>TODO: Fill in image details.</td>
+                <td id="main-name"></td>
             </tr>
             <tr>
-                <td><b>Licence</b></td>
-                <td>TODO: Fill in licence details.</td>
+                <td><b>License</b></td>
+                <td id="main-license"></td>
+            </tr>
+            <tr>
+                <td><b>Score</b></td>
+                <td id="main-score"></td>
             </tr>
         </tbody>
     </table>
     </div>
+
 </div>
 
 </body>

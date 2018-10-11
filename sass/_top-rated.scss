@@ -1,0 +1,22 @@
+// Partial for the Top-Rated page
+
+.image-container, #main-image {
+  width: 100%;
+}
+
+.voting-buttons {
+  display: flex;
+  justify-content: center;
+  padding: 8px;
+
+  .voting-button {
+    padding: 8px;
+    margin: 0 8px;
+  }
+}
+
+.image-details {
+  width: 100%;
+}
+
+
