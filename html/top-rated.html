@@ -40,6 +40,7 @@
 </div>
 
 
+
 <!-- Page content -->
 <div class="main-content">
 
@@ -47,18 +48,27 @@
         <div class="image-container">
             <!-- src and alt attribute will be populated by index.js on page load -->
             <img id="top-image" src="" alt="">
+            <span>----------------------------------------------------------------------------------------------------</span>
         </div>
+        <button id="details-button" class="details-button" onclick="toggleDetails()">Toggle Details Panel</button>
+    </div>
 
-        <table class="image-details">
+
+
+
+    <div id="details-panel" class="details-panel">
+        <h4 class="details-title"><u>Details</u></h4>
+        <table class="image-details" >
             <tbody>
-            <tr>
-                <td><b>Author:</b></td>
-                <td id="top-author"></td>
-            </tr>
             <tr>
                 <td><b>Name:</b></td>
                 <td id="top-name"></td>
             </tr>
+            <tr>
+                <td><b>Author:</b></td>
+                <td id="top-author"></td>
+            </tr>
+
             <tr>
                 <td><b>License:</b></td>
                 <td id="top-license"></td>

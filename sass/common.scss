@@ -33,17 +33,17 @@
 
 }
 
+.details-panel {
+   display: none;
 
+   background-color: honeydew;
 
-.details-panel{
-  display: none;
+   border: 5px solid black;
+   border-radius: 40px;
+   padding: 15px;
 
-  background-color: honeydew;
+ }
 
-  border: 5px solid black;
-  border-radius: 40px;
-  padding: 15px;
-}
 
 
 body {
@@ -58,11 +58,34 @@ body {
   max-width: 800px;
   margin: 0 auto;
 
+  .image-panel {
+    background-color: darkseagreen;
+    padding: 20px;
+    border: 5px solid black;
+    border-radius: 40px;
+
+    button {
+      background-color: honeydew;
+      padding-left: 10px;
+      padding-right: 10px;
+      font-size: 25px;
+      border: 2px solid black;
+      border-radius: 15px;
+
+      outline: none;
+    }
+
+
+  }
 }
 
-.image-panel {
-  background-color: darkseagreen;
-  padding: 20px;
-  border: 5px solid black;
-  border-radius: 40px;
+
+button:hover {
+  top: -10px;
+
+  -webkit-transform: rotateX(20deg);
+  -moz-transform: rotateX(20deg);
+  -ms-transform: rotateX(20deg);
+  transform: rotateX(20deg);
+  cursor: pointer;
 }

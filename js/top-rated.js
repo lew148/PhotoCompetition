@@ -28,6 +28,22 @@ function loadTopRatedImage() {
 }
 
 
+function toggleDetails() {
+    var x = document.getElementById("details-panel");
+
+    var y = document.getElementById("details-button");
+
+    if (x.style.display === "none") {
+        y.style.backgroundColor = "#d4ffc8"
+        x.style.display = "block";
+    } else {
+        y.style.backgroundColor = "honeydew"
+        x.style.display = "none";
+    }
+}
+
+
+
 $ (function() {
     loadTopRatedImage();
 })

@@ -52,15 +52,7 @@
   }
 
 
-  button:hover {
-    top: -10px;
 
-    -webkit-transform: rotateX(20deg);
-    -moz-transform: rotateX(20deg);
-    -ms-transform: rotateX(20deg);
-    transform: rotateX(20deg);
-    cursor: pointer;
-  }
 
   button:active {
     top: 0px;
